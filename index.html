@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/mobile-first.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -37,6 +37,15 @@
             +38 096 111 11 11</a
           >
         </address>
+        <div class="mobile-menu">
+          <button type="button" class="mobile-menu--button mobile-menu--button_is-open" >
+          <svg width="40px" height="40px" aria-label="переключатель меню">
+            <use class="mobile-menu--icon-menu" href="./images/menu-burger.svg#icon-menu_24px"></use>
+            <use class="mobile-menu--icon-close" href="./images/menu-burger.svg#icon-close_24px"></use>
+          </svg>
+        </button>
+        </div>
+        
       </div>
     </header>
 
@@ -114,7 +123,7 @@
                   <use href="./images/symbol.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="advantages--second-tittle">пунктуальность</h3>
+              <h3 class="advantages--second-title">пунктуальность</h3>
               <p class="advantages--text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="advantages--item">
@@ -123,7 +132,7 @@
                   <use href="./images/symbol.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="advantages--second-tittle">планирование</h3>
+              <h3 class="advantages--second-title">планирование</h3>
               <p class="advantages--text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="advantages--item">
@@ -132,7 +141,7 @@
                   <use href="./images/symbol.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="advantages--second-tittle">современные технологии</h3>
+              <h3 class="advantages--second-title">современные технологии</h3>
               <p class="advantages--text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>

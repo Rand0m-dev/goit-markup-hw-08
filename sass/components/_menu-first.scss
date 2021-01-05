@@ -1,0 +1,19 @@
+.mobile-menu--button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu--icon-close {
+  display: none;
+}
+
+.mobile-menu--button_is-open .mobile-menu--icon-close {
+  display: block;
+}
+
+.mobile-menu--button_is-open .mobile-menu--icon-menu {
+  display: none;
+}
