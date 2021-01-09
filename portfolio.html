@@ -7,34 +7,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/mobile-first.min.css" />
 </head>
 <body>
     <!-- Шапка сайта -->
     <header>
         <div class="container header">
-            <!-- Логотип сайта-->
-        <a href="./index.html"><img src="./images/WebStudio.jpg" alt="Logo" width="145"></a>
-        <!--Навигация по сайту-->
-        <nav class="main-nav">
-          <ul class="main-nav--list">
-              <li class="main-nav--item"><a class="main-nav--link" href="./index.html">Студия</a></li>
-              <li class="main-nav--item"><a class="main-nav--link main-nav--link_active" href="./portfolio.html">Портфолио</a></li>
-              <li class="main-nav--item"><a class="main-nav--link" href="">Контакты</a></li>
-            </ul>
+          <!-- Логотип сайта-->
+          <nav class="nav">
+          <a href="./index.html"><img class="nav--logo" src="./images/WebStudio.jpg" alt="Logo" width="134" /></a>
+            <button type="button" class="nav--button" 
+            aria-expanded="false"
+            aria-controls="container-menu"
+            data-menu-button
+            >
+            <svg class="nav--icon" width="40px" height="40px" aria-label="переключатель меню">
+              <use class="nav--icon-menu" href="./images/menu-burger.svg#icon-menu_40px"></use>
+              <use class="nav--icon-close" href="./images/menu-burger.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+  
+          <!--Навигация по сайту-->
+          <div class="container-menu" id="container-menu" data-menu>
+            <div class="main-nav">
+              <ul class="main-nav--list">
+                <li class="main-nav--item"><a class="main-nav--link" href="./index.html">Студия</a></li>
+                <li class="main-nav--item"><a class="main-nav--link main-nav--link_active" href="./portfolio.html">Портфолио</a></li>
+                <li class="main-nav--item"><a class="main-nav--link" href="">Контакты</a></li>
+              </ul>
+            </div>
+            <address class="contacts-header">
+              <a class="contacts-header--link" href="mailto:info@devstudio.com">
+                <svg class="contacts-header--icon envelope" width="16px" height="11px">
+                  <use href="./images/symbol.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+              <a class="contacts-header--link" href="tel:+380961111111">
+                <svg class="contacts-header--icon smartphone" width="10px" height="15px">
+                  <use href="./images/symbol.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </address>
+          </div>
         </nav>
-        <address class="contacts-header">
-            <a class="contacts-header--link" href="mailto:info@devstudio.com">
-                <svg class="contacts-header--icon" width="16" , height="12">
-                    <use href="./images/symbol.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a>
-            <a class="contacts-header--link" href="tel:+380961111111">
-                <svg class="contacts-header--icon" width="10" , height="16">
-                    <use href="./images/symbol.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a>
-        </address>
+        </div>
       </header>
     <main class="portfolio">
         <h1 class="portfolio--title">Примеры работ</h1>
@@ -256,5 +274,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

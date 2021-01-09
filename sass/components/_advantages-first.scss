@@ -1,0 +1,52 @@
+.advantages {
+    padding: 60px 0px;
+  }
+
+  .advantages--list {
+      padding: 0;
+      margin: 0;
+  }
+
+  .advantages--item  {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .advantages--block-icon {
+      margin-bottom: 30px;
+      background-color: #f5f4fa;
+  }
+
+  .advantages--icon {
+      margin: 25px 190px;
+      width: 70px;
+      height: 70px;
+      
+  }
+
+
+  .advantages--second-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: getColor(title);
+  }
+
+  .advantages--text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: getColor(primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  

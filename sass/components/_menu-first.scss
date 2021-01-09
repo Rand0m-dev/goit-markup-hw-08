@@ -44,6 +44,12 @@
   justify-content: space-between;
 }
 
+.nav--logo {
+  @media screen and (min-width: 1200px){
+    width: 145px;
+  }
+}
+
 .nav--button {
   display: inline-flex;
   margin: 0;
@@ -51,6 +57,11 @@
   background-position: center;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: getColor(accent);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -62,6 +73,7 @@
   background-position: 50% 50%;
   justify-content: center;
   text-align: center;
+  fill: currentColor;
 }
 
 .main-nav--list {
@@ -71,6 +83,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  margin-left: 93px;
   }
 }
 
@@ -128,6 +144,19 @@
   }
 }
 
+.contacts-header {
+  @media screen and (min-width: 768px){
+  margin-left: 84px;
+  margin-top: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
 .contacts-header--link {
   display: block;
 
@@ -145,11 +174,33 @@
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
-    line-height: 1.17;
+    transition: $animation;
 
     &:first-child {
-      margin-bottom: 10px;
       margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+    transition: $animation;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+
+    & + & {
+      margin-left: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      color: getColor(accent);
     }
   }
 }
@@ -160,5 +211,32 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 4px;
+    
+    &.envelope {
+      width: 14px;
+      height: 10px;
+    }
+
+    &.smartphone {
+      width: 10px;
+      height: 14px;
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    fill: currentColor;
+    
+    &.envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    &.smartphone {
+      width: 10px;
+      height: 16px;
+    }
+
   }
 }

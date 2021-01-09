@@ -305,14 +305,17 @@ body {
   }
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container.header {
   position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
 }
 
-@media screen {
+@media screen and (min-width: 768px) {
   .container.header {
     padding-top: 0;
     padding-bottom: 0;
@@ -376,6 +379,12 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1200px) {
+  .nav--logo {
+    width: 145px;
+  }
+}
+
 .nav--button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -385,6 +394,10 @@ body {
   background-position: center;
   border: none;
   background-color: transparent;
+}
+
+.nav--button:hover, .nav--button:focus {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -400,6 +413,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  fill: currentColor;
 }
 
 .main-nav--list {
@@ -413,6 +427,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav--list {
+    margin-left: 93px;
   }
 }
 
@@ -469,6 +489,23 @@ body {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-header {
+    margin-left: 84px;
+    margin-top: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
 .contacts-header--link {
   display: block;
   font-style: normal;
@@ -487,11 +524,36 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-header--link {
     font-size: 12px;
-    line-height: 1.17;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contacts-header--link:first-child {
-    margin-bottom: 10px;
     margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header--link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-header--link:first-child {
+    margin-bottom: 0;
+  }
+  .contacts-header--link + .contacts-header--link {
+    margin-left: 30px;
+  }
+  .contacts-header--link:hover, .contacts-header--link:focus {
+    color: #2196f3;
   }
 }
 
@@ -503,6 +565,29 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-header--icon {
     margin-right: 4px;
+  }
+  .contacts-header--icon.envelope {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts-header--icon.smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header--icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .contacts-header--icon.envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts-header--icon.smartphone {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -531,5 +616,60 @@ body {
 
 .modal {
   text-align: center;
+}
+
+.advantages {
+  padding: 60px 0px;
+}
+
+.advantages--list {
+  padding: 0;
+  margin: 0;
+}
+
+.advantages--item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.advantages--block-icon {
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.advantages--icon {
+  margin: 25px 190px;
+  width: 70px;
+  height: 70px;
+}
+
+.advantages--second-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.advantages--text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #757575;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .employment {
+    display: none;
+  }
 }
 /*# sourceMappingURL=mobile-first.css.map */
