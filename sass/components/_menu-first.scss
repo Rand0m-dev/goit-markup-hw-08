@@ -12,24 +12,25 @@
 
 .container-menu {
   background: #ffffff;
-  text-align: center;
 
   @media screen and (max-width: 767px) {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: block;
+    }
   }
-  } 
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -43,7 +44,6 @@
   justify-content: space-between;
 }
 
-
 .nav--button {
   display: inline-flex;
   margin: 0;
@@ -52,7 +52,7 @@
   border: none;
   background-color: transparent;
 
-  @media screen and (min-width: 767px){
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -62,25 +62,20 @@
   background-position: 50% 50%;
   justify-content: center;
   text-align: center;
-
-}
-
-.contacts-header--link {
-  display: block;
 }
 
 .main-nav--list {
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: 768px){
-    display:flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
     margin-left: 88px;
   }
 }
 
 .main-nav--item {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-right: 50px;
 
     &:last-child {
@@ -107,7 +102,11 @@
     color: getColor(accent);
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -130,21 +129,36 @@
 }
 
 .contacts-header--link {
- font-style: normal;
- font-weight: 500;
- font-size: 18px;
- line-height: 1.17;
- letter-spacing: 0.02em;
- color: getColor(primary);
+  display: block;
 
- &:first-child {
-   margin-top: 20px;
-   margin-bottom: 16px;
- }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: getColor(primary);
+
+  &:first-child {
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+
+    &:first-child {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+  }
 }
 
 .contacts-header--icon {
+  margin-right: 6px;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 4px;
+  }
 }
-
-
