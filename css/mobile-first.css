@@ -633,12 +633,17 @@ header {
 }
 
 .advantages--block-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  width: 450px;
+  height: 120px;
 }
 
 .advantages--icon {
-  margin: 25px 190px;
+  margin: auto;
   width: 70px;
   height: 70px;
 }
