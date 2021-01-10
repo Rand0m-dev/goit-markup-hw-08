@@ -1,0 +1,51 @@
+.clients {
+  padding: 60px 0px;
+}
+
+.clients--title {
+  margin: 0px;
+  margin-bottom: 30px;
+
+  color: getColor(title);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients--block-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.clients--link {
+  display: flex;
+  padding: 0px;
+  margin-bottom: 30px;
+  width: 210px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #afb1b8;
+  transition: $animation;
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid getColor(accent);
+    color: getColor(accent);
+  }
+}
+
+.clients--icon {
+  fill: currentColor;
+  margin: auto;
+}
