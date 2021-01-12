@@ -4,6 +4,10 @@
   margin-right: auto;
   padding: 60px 0px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer--design-logo {
@@ -21,6 +25,11 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .address {
@@ -29,6 +38,11 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .adress--text {
@@ -36,6 +50,11 @@
   margin-bottom: 8px;
 
   color: getColor(white-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+    width: 231px;
+  }
 }
 
 .adress--link {
@@ -45,6 +64,11 @@
 
   &:last-child {
     margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+    width: 231px;
   }
 }
 
@@ -56,6 +80,13 @@
     margin: 0;
     margin-left: 165px;
     margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+    height: 80px;
+    margin-top: 12px;
+    margin-left: 70px;
   }
 }
 
@@ -84,11 +115,27 @@
   &:last-child {
     margin-right: 0px;
   }
+
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      background: getColor(accent);
+    }
+  }
 }
 
 .social--icon {
   fill: currentColor;
   margin: auto;
+}
+
+.subscription {
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+  }
 }
 
 .subscription--text {
@@ -119,6 +166,12 @@
   @media screen and (min-width: 768px) {
     margin: auto;
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 12px;
+    width: 358px;
   }
 
   &::placeholder {
@@ -164,10 +217,26 @@
   }
 }
 
+.subscription--form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer--wrapper-second {
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 76px;
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.footer--wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
