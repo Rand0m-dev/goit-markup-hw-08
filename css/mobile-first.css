@@ -1038,6 +1038,14 @@ header {
   margin: 60px 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .social {
+    margin: 0;
+    margin-left: 165px;
+    margin-top: 5px;
+  }
+}
+
 .social--title {
   margin: 0;
   margin-bottom: 20px;
@@ -1094,6 +1102,13 @@ header {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .subscription--email {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .subscription--email::-webkit-input-placeholder {
@@ -1176,8 +1191,24 @@ header {
   background-image: url(../images/icon-send.svg);
 }
 
+@media screen and (min-width: 768px) {
+  .footer--wrapper-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
+}
+
 .portfolio {
   padding: 60px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0px;
+  }
 }
 
 .portfolio--title {
@@ -1192,6 +1223,21 @@ header {
       flex-wrap: wrap;
   font-size: 0;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio--buttons {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio--buttons {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio--button {
@@ -1225,6 +1271,12 @@ header {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio--button {
+    margin-bottom: 0;
+  }
+}
+
 .galery--title {
   display: none;
 }
@@ -1232,6 +1284,16 @@ header {
 .galery--list {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .galery--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .galery--item {
@@ -1250,6 +1312,25 @@ header {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .galery--item {
+    margin-right: 30px;
+    width: 354px;
+  }
+  .galery--item:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+  .galery--item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .galery--item:first-child .galery--signature {
+    height: 147px;
+  }
+}
+
 .galery--link:active .description--info,
 .galery--link:hover .description--info,
 .galery--link:focus .description--info {
@@ -1265,8 +1346,6 @@ header {
 
 .galery--second-title {
   margin-top: 0;
-  padding-top: 20px;
-  margin-left: 24px;
   margin-bottom: 4px;
   color: #212121;
   font-style: normal;
@@ -1277,9 +1356,7 @@ header {
 }
 
 .galery--text {
-  margin-top: 0;
-  margin-left: 24px;
-  margin-bottom: 20px;
+  margin: 0;
   color: #757575;
   font-style: normal;
   font-weight: 400;
@@ -1292,6 +1369,7 @@ header {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .description {
