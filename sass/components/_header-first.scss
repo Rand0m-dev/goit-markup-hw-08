@@ -1,4 +1,8 @@
-header{
+body.modal-open {
+  overflow: hidden;
+}
+
+header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -7,7 +11,7 @@ header{
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-top: 0;
     padding-bottom: 0;
   }
