@@ -839,7 +839,6 @@ header {
 
 .form {
   margin: auto;
-  width: 370px;
 }
 
 @media screen and (min-width: 1200px) {
