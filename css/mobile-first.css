@@ -1397,7 +1397,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients--link {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 3);
         flex-basis: calc((100% - 4 * 15px) / 3);
