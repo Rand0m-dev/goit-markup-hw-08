@@ -1871,15 +1871,13 @@ header {
   }
 }
 
-.galery--link:active .description--info,
 .galery--link:hover .description--info,
 .galery--link:focus .description--info {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.galery--link:focus .galery--signature,
-.galery--link:active .galery--signature {
+.galery--link:focus .galery--signature {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
